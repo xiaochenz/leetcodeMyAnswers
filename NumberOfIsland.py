@@ -13,10 +13,6 @@ def numIslands(grid):
                         if grid[i][j] == '1':
                             searchLand(grid,checkedMatrix,m,n,i,j)
                             numIsl += 1
-                            #print i,j,numIsl
-                        #elif grid[i][j] == '0':
-                        #    searchWater(grid,checkedMatrix,m,n,i,j)
-                            #print i,i,numIsl
             return numIsl
 def searchLand(grid,checkedMatrix, m,n, i,j):
         checkedMatrix[i][j] = 1
